@@ -39,7 +39,7 @@ current_count=0
 
 pygame.init()
 screen = pygame.display.set_mode((800,800))
-s1 = pygame.image.load("av.png")
+s1 = pygame.image.load("gamejam7/png/av.png")
 surf1=pygame.surfarray.make_surface(np.full((800,800,3),(50,50,50)))
 font = pygame.font.Font('freesansbold.ttf', 20)
 Running=True
@@ -50,13 +50,13 @@ screen.blit(surf1, (0, 0))
 screen.blit(text, (230, 200))
 screen.blit(s1, (300, 300))
 pygame.display.flip()
-time.sleep(3)
+time.sleep(2)
 screen.blit(surf1, (0, 0))
 font = pygame.font.Font('freesansbold.ttf', 40)
 text = font.render("Memory Game", True, (255, 255, 255), (50, 50, 50))
 screen.blit(text, (250, 300))
 pygame.display.flip()
-time.sleep(3)
+time.sleep(2)
 font = pygame.font.Font('freesansbold.ttf', 15)
 Flag=True
 end=False
